@@ -1,0 +1,16 @@
+$color-primary: #55c57a;
+$color-white: #fff;
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::selection{
+    background-color: $color-primary;
+    color: $color-white;
+}
+
