@@ -1,0 +1,36 @@
+.header{
+    background-color: #fff;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-rows: 20vh minmax(10vh, min-content) 1fr;
+    grid-template-columns: [header-full-start header-logo-start] minmax(9rem, min-content) [header-logo-end] minmax(min-content, 1fr) [header-full-end];
+    justify-content: center;
+    row-gap: 1.5rem;
+
+
+    &__logo-box {
+        grid-column: header-logo-start / header-logo-end;
+        grid-row: 1 / 2;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+
+    &__text-box{
+        grid-column: header-full-start / header-full-end;
+        grid-row: 2 / 3;
+        justify-self: center;
+
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: min-content 15vh;
+        align-items: flex-end;
+    }
+
+    &__wave-box{
+        grid-column: header-full-start / header-full-end;
+        grid-row: 3 / 4;
+        align-self: flex-end;
+    }
+
+}

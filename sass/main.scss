@@ -1,16 +1,8 @@
-$color-primary: #55c57a;
-$color-white: #fff;
+@import "abstracts/variables";
+@import "base/base";
 
-*,
-*::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-::selection{
-    background-color: $color-primary;
-    color: $color-white;
-}
-
+@import "layout/header";
+@import "components/typography";
+@import "base/animation";
+@import "components/button";
+@import "components/wave";
