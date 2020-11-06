@@ -55,10 +55,10 @@ body {
     grid-row: 3 / 4;
     align-self: flex-end; }
 
-.header-primary {
+.heading-primary {
   text-transform: uppercase;
   backface-visibility: hidden; }
-  .header-primary--main {
+  .heading-primary--main {
     display: block;
     font-size: 4rem;
     font-weight: 300;
@@ -66,12 +66,38 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
-  .header-primary--sub {
+  .heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: .1rem;
     animation: moveInRight 1s ease-out; }
+
+.heading-secondary {
+  text-transform: uppercase;
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: .2rem;
+  background-image: linear-gradient(rgba(75, 187, 23, 0.801), rgba(0, 112, 0, 0.801));
+  background-clip: text;
+  color: transparent; }
+  .heading-secondary--italic {
+    font-style: italic; }
+
+.heading-tertiary {
+  text-transform: uppercase;
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .1rem; }
+
+.paragraph {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  word-spacing: .5rem; }
 
 @keyframes moveInLeft {
   0% {
@@ -182,3 +208,43 @@ body {
   /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px; }
+
+.explore__pictures {
+  grid-column: full-start / col-end 4;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../img/explore-bg.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+  .explore__pictures--1 {
+    height: 100%;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    align-self: center;
+    justify-self: flex-end; }
+  .explore__pictures--2 {
+    height: 100%;
+    grid-row: 3 / 6;
+    grid-column: 1 / 5;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    justify-self: flex-end; }
+
+.explore__content {
+  grid-column: col-start 5 / full-end;
+  background-color: #fff;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.mb-sm {
+  margin-bottom: 2rem !important; }
+
+.mb-md {
+  margin-bottom: 3rem !important; }
+
+.mb-lg {
+  margin-bottom: 4rem !important; }
+
+.mb-hg {
+  margin-bottom: 8rem !important; }

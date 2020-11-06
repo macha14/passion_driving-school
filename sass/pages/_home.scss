@@ -1,0 +1,36 @@
+.explore__pictures{
+    grid-column: full-start / col-end 4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../../img/explore-bg.jpg);
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
+    &--1{
+        height: 100%;
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        align-self: center;
+        justify-self:flex-end;
+    }
+
+    &--2{
+        height: 100%;
+        grid-row: 3 / 6;
+        grid-column: 1 / 5;
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+        justify-self: flex-end;
+    }
+}
+
+.explore__content{
+    grid-column: col-start 5 / full-end;
+    background-color: $color-white;
+    padding: 6rem 8vw;
+
+    display: grid;
+    align-content: center;
+    justify-items: start;
+
+}
