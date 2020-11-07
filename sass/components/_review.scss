@@ -1,0 +1,60 @@
+.review {
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    border-radius: 3px;
+    transition: all .2s;
+    color: $color-grey-dark-1;
+    position: relative;
+    z-index: 1;
+
+    &:hover{
+        transform: translateY(-2rem) scale(1.02);
+        box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.06);
+    }
+
+    &__text{
+        line-height: 2.5rem;
+        word-spacing: .3rem;
+
+    }
+
+    &__user{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+
+        &-name{
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: .4rem;
+        }
+
+        &-date{
+            font-size: 1rem;
+            color: $color-grey-dark-2;
+        }
+
+    }
+
+    &__photo{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        border: 1px solid $color-primary;
+    }
+
+    &::before{
+        content: "\201C";
+        position: absolute;
+        line-height: 11rem;
+        font-size: 15rem;
+        font-family: sans-serif;
+        color: $color-grey-light-2;
+        top: 0;
+        left: -1rem;
+        z-index: -1;
+    }
+}

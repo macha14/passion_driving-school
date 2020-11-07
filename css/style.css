@@ -14,7 +14,7 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  background-color: #f7f1e3;
+  background-color: #ebe3d5;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 1.6;
@@ -95,9 +95,7 @@ body {
 .paragraph {
   display: block;
   font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 3rem;
-  word-spacing: .5rem; }
+  font-weight: 400; }
 
 @keyframes moveInLeft {
   0% {
@@ -236,36 +234,33 @@ body {
   display: grid;
   align-content: center;
   justify-items: start; }
+  .explore__content p {
+    line-height: 2.8rem;
+    word-spacing: .5rem; }
 
 .features {
   grid-column: full-start / full-end;
-  padding: 15rem 8rem;
-  background-image: linear-gradient(rgba(180, 180, 180, 0.8), rgba(180, 180, 180, 0.8)), url(../../img/feature-bg.jpg);
+  padding: 12rem 8rem;
+  background-image: linear-gradient(rgba(255, 119, 0, 0.6), rgba(255, 119, 0, 0.6)), url(../../img/feature-bg.jpg);
   background-size: cover;
   background-position: bottom;
+  background-attachment: fixed;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  justify-content: center;
-  justify-items: center;
   grid-gap: 5rem; }
-  .features-box {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 2.5rem;
-    color: #777;
-    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    transition: all .3s; }
-    .features-box:hover {
-      transform: translateY(-2rem) scale(1.02);
-      box-shadow: 0 2.5rem 3.5rem rgba(0, 0, 0, 0.15); }
-    .features-box div {
-      text-align: center; }
-    .features-box__icon {
-      display: inline-block;
-      margin: 0 auto;
-      width: 6rem;
-      height: 6rem;
-      fill: #238823; }
+
+.reviews {
+  grid-column: full-start / full-end;
+  padding: 10rem 15rem;
+  background-color: #eee;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-gap: 8rem;
+  justify-items: center; }
+  .reviews__details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 8rem; }
 
 .mb-sm {
   margin-bottom: 2rem !important; }
@@ -278,3 +273,69 @@ body {
 
 .mb-hg {
   margin-bottom: 8rem !important; }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem;
+  color: #777;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all .3s; }
+  .feature-box:hover {
+    transform: translateY(-2rem) scale(1.02);
+    box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.15); }
+  .feature-box div {
+    text-align: center; }
+  .feature-box__icon {
+    display: inline-block;
+    margin: 0 auto;
+    width: 6rem;
+    height: 6rem;
+    fill: #FF7800; }
+  .feature-box p {
+    line-height: 2.5rem;
+    word-spacing: .3rem; }
+
+.review {
+  background-color: #fff;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  border-radius: 3px;
+  transition: all .2s;
+  color: #777;
+  position: relative;
+  z-index: 1; }
+  .review:hover {
+    transform: translateY(-2rem) scale(1.02);
+    box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.06); }
+  .review__text {
+    line-height: 2.5rem;
+    word-spacing: .3rem; }
+  .review__user {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem;
+    align-items: center; }
+    .review__user-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: .4rem; }
+    .review__user-date {
+      font-size: 1rem;
+      color: #999; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    border: 1px solid #238823; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    line-height: 11rem;
+    font-size: 15rem;
+    font-family: sans-serif;
+    color: #eee;
+    top: 0;
+    left: -1rem;
+    z-index: -1; }
