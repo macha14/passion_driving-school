@@ -1,6 +1,6 @@
 .explore__pictures{
     grid-column: full-start / col-end 4;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../../img/explore-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url(../img/explore-bg.jpg);
     background-size: cover;
 
     display: grid;
@@ -16,7 +16,7 @@
     }
 
     &--2{
-        height: 100%;
+        width: 100%;
         grid-row: 3 / 6;
         grid-column: 1 / 5;
         box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
@@ -44,7 +44,7 @@
     grid-column: full-start / full-end;
     padding: 12rem 8rem;
     //background-image: linear-gradient(  rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.8)), url(../../img/feature-bg.jpg);
-    background-image: linear-gradient(rgba(255, 119, 0, 0.6), rgba(255, 119, 0, 0.6)), url(../../img/feature-bg.jpg);
+    background-image: linear-gradient(rgba(255, 119, 0, 0.6), rgba(255, 119, 0, 0.6)), url(../img/feature-bg.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -57,7 +57,7 @@
 .reviews{
     grid-column: full-start / full-end;
     padding: 10rem 15rem;
-    background-color: $color-grey-light-2;
+    background-color: $color-grey-light-3;
 
 
     display: grid;
@@ -70,4 +70,30 @@
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-gap: 8rem;
     }
+}
+
+.contact{
+    grid-column: full-start / full-end;
+    padding: 10rem 15rem;
+    background-color: $color-grey-light-2;
+
+    display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 42rem);
+
+
+    &__box {
+        background-color: $color-primary-dark;
+        border-radius: 0 8px 8px 0;
+        padding: 6rem 4rem;
+        color: $color-grey-light-3;
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.08);
+    }
+
+    &__form {
+        background-color: $color-white;
+        border-radius: 8px 0 0 8px;
+        padding: 6rem 8rem;
+    }
+
 }

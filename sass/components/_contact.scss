@@ -1,0 +1,40 @@
+.contact{
+
+    &__text{
+        color: rgba(250, 249, 249, 0.801);
+    }
+
+    &__info{
+        display: grid;
+        grid-template-rows: repeat(3, mincontent);
+        grid-gap: 3rem;
+    }
+
+    &__group{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-gap: 2rem;
+        align-items: center;
+    }
+
+    &__icon{
+        height: 3rem;
+        width: 3rem;
+        fill: $color-grey-light-3;
+        padding: 2px;
+        transition: all .2s;
+        border-radius: 2px;
+
+        &:hover{
+            fill: $color-primary-dark;
+            background-color: #fff;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.social__links{
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    grid-gap: 3rem;
+}
