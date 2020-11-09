@@ -1,3 +1,6 @@
+/**************************
+***  HEADING - primary
+**************************/
 .heading-primary{
     text-transform: uppercase;
     backface-visibility: hidden;
@@ -11,7 +14,6 @@
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
-
     }
 
     &--sub{
@@ -24,13 +26,16 @@
     }
 }
 
+/**************************
+***  HEADING - secondary
+**************************/
+
 .heading-secondary{
     text-transform: uppercase;
-    display: block;
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: .2rem;
-    background-image: linear-gradient(rgba(75, 187, 23, 0.801),rgba(0, 112, 0, 0.801));
+    background-image: linear-gradient(rgba($color-primary-light, 0.801),rgba($color-primary, 0.801));
     background-clip: text;
     color: transparent;
 
@@ -40,6 +45,11 @@
 
 }
 
+
+/**************************
+***  HEADING - tertiary
+**************************/
+
 .heading-tertiary{
     text-transform: uppercase;
     display:block;
@@ -47,6 +57,10 @@
     font-weight: 400;
     letter-spacing: .1rem;
 }
+
+/**************************
+***  PARAGRAPH
+**************************/
 
 .paragraph{
     display: block;

@@ -1,6 +1,6 @@
 .review {
     background-color: $color-white;
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.08);
     padding: 2rem;
     border-radius: 3px;
     transition: all .2s;
@@ -10,13 +10,12 @@
 
     &:hover{
         transform: translateY(-2rem) scale(1.02);
-        box-shadow: 0 2.5rem 4.5rem rgba(0, 0, 0, 0.06);
+        box-shadow: 0 2.5rem 4.5rem rgba($color-black, 0.06);
     }
 
     &__text{
         line-height: 2.5rem;
         word-spacing: .3rem;
-
     }
 
     &__user{

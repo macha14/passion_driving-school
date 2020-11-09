@@ -1,4 +1,12 @@
+/**************************
+***  BUTTON
+**************************/
 .btn {
+
+    &-box{
+        text-align: center;
+    }
+
     &,
     &:link,
     &:visited {
@@ -8,9 +16,22 @@
         display: inline-block;
         border-radius: 10rem;
         position: relative;
-        font-size: $default-font-size;
+        font-size: $font-size;
 
         transition: all .2s;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
     }
 
     &:hover {
@@ -39,26 +60,8 @@
         }
     }
 
-
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
-    }
-
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
     }
-}
-
-.btn-box{
-    text-align: center;
 }
