@@ -11,6 +11,14 @@
 
 html{
     font-size: 62.5%;  //1rem = 10px; 10px/16px = 62.5%
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 37.5%;
+    }
 }
 
 body{
@@ -21,6 +29,10 @@ body{
     font-weight: 400;
     line-height: 1.6;
     color: $color-grey-dark-3;
+
+    @media only screen and ( max-width: $bp-medium){
+        padding: 0;
+    }
 }
 
 ::selection{
@@ -32,4 +44,16 @@ body{
     display: grid;
     grid-template-rows: 90vh 40vw repeat(4, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and ( max-width: $bp-large){
+        grid-template-rows: 90vh 55vw 40vw repeat(4, min-content);
+    }
+
+    @media only screen and ( max-width: $bp-medium){
+        grid-template-rows: 80vh 65vw 50vw repeat(4, min-content);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: 70vh 80vw 70vw repeat(4, min-content);
+    }
 }

@@ -1,7 +1,6 @@
 .footer{
     grid-column: full-start / full-end;
     background-color: $color-grey-dark-3;
-    padding: 10rem 15rem;
     color: $color-grey-light-2;
     font-size: 1.4rem;
 
@@ -19,8 +18,20 @@
 
     &__details{
         display: grid;
-        grid-template-columns: repeat(2, max-content);
-        grid-gap: 30rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20rem;
+
+        @media only screen and ( max-width: $bp-largest){
+            grid-template-columns: max-content;
+            grid-template-rows: repeat(2, max-content);
+            justify-content: center;
+            justify-items: center;
+            grid-gap: 2rem;
+        }
+
+        @media only screen and ( max-width: $bp-medium){
+            grid-template-columns: 1fr;
+        }
     }
 
     &__nav{
@@ -28,6 +39,11 @@
         border-top: 1px solid $color-grey-dark-2;
         padding-top: 2rem;
         width: 100%;
+
+        @media only screen and ( max-width: $bp-largest){
+            border-top: none;
+            padding-top: 0;
+        }
     }
 
     &__copyright{
@@ -35,6 +51,10 @@
         border-top: 1px solid $color-grey-dark-2;
         padding-top: 2rem;
         width: 100%;
+
+        @media only screen and ( max-width: $bp-medium){
+            text-align: center;
+        }
     }
 
     &__list{
@@ -42,6 +62,10 @@
         display: grid;
         grid-template-columns: repeat(3, max-content);
         grid-gap: 3rem;
+
+        @media only screen and ( max-width: $bp-largest){
+            justify-content: center;
+        }
     }
 
     &__item{
@@ -60,7 +84,7 @@
     &__link:active,
     &__link:hover{
         color: $color-primary-light;
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+        box-shadow: $box-shadow-2;
         transform: rotate(5deg) scale(1.3);
     }
 

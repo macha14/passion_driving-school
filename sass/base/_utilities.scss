@@ -1,4 +1,64 @@
+/**************************
+***  MARGIN
+**************************/
 .mb-sm { margin-bottom: 2rem !important; }
 .mb-md { margin-bottom: 3rem !important; }
 .mb-lg { margin-bottom: 4rem !important; }
 .mb-hg { margin-bottom: 8rem !important; }
+
+/**************************
+***  TEXT ALIGN
+**************************/
+.ta-c { text-align: center;}
+
+/**************************
+***  PADDING
+**************************/
+.p-sm {
+    padding: 5rem 8rem;
+
+    @media only screen and ( max-width: $bp-largest){
+        padding: 3rem 6rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 1.5rem 3rem;
+    }
+}
+.p-md {
+    padding: 6rem 8vw;
+
+    @media only screen and ( max-width: $bp-largest){
+        padding: 4rem 6vw;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 2rem 3vw;
+    }
+}
+.p-lg {
+    padding: 10rem 15rem;
+
+    @media only screen and ( max-width: $bp-largest){
+        padding: 8rem 13rem;
+    }
+
+    @media only screen and ( max-width: $bp-medium){
+        padding: 5rem 10rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 5rem;
+    }
+}
+.p-hg {
+    padding: 12rem 8rem;
+    @media only screen and ( max-width: $bp-largest){
+        padding: 10rem 6rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 5rem;
+    }
+
+}

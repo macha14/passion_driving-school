@@ -1,8 +1,8 @@
 .review {
     background-color: $color-white;
-    box-shadow: 0 1.5rem 3rem rgba($color-black, 0.08);
+    box-shadow: $box-shadow-3;
     padding: 2rem;
-    border-radius: 3px;
+    border-radius: $border-radius-1;
     transition: all .2s;
     color: $color-grey-dark-1;
     position: relative;
@@ -10,7 +10,7 @@
 
     &:hover{
         transform: translateY(-2rem) scale(1.02);
-        box-shadow: 0 2.5rem 4.5rem rgba($color-black, 0.06);
+        box-shadow: $box-shadow-5;
     }
 
     &__text{
@@ -33,6 +33,7 @@
 
         &-date{
             font-size: 1rem;
+            font-weight: 700;
             color: $color-grey-dark-2;
         }
 
@@ -41,7 +42,7 @@
     &__photo{
         height: 4.5rem;
         width: 4.5rem;
-        border-radius: 50%;
+        border-radius: $border-radius-3;
         border: 1px solid $color-primary;
     }
 

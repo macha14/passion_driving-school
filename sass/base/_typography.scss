@@ -14,6 +14,10 @@
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @media only screen and (max-width: $bp-small) {
+            letter-spacing: .15rem;
+        }
     }
 
     &--sub{
@@ -23,6 +27,10 @@
         letter-spacing: .1rem;
 
         animation: moveInRight 1s ease-out;
+
+        @media only screen and (max-width: $bp-small) {
+            letter-spacing: .05rem;
+        }
     }
 }
 
