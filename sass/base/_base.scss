@@ -42,15 +42,20 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 90vh 40vw repeat(4, min-content);
+    grid-template-rows: 85vh 40vw repeat(4, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 
+
+    @media only screen and ( max-width: $bp-largest){
+        grid-template-rows: 80vh 55vw 40vw repeat(4, min-content);
+    }
+
     @media only screen and ( max-width: $bp-large){
-        grid-template-rows: 90vh 55vw 40vw repeat(4, min-content);
+        grid-template-rows: 76vh 55vw 40vw repeat(4, min-content);
     }
 
     @media only screen and ( max-width: $bp-medium){
-        grid-template-rows: 80vh 65vw 50vw repeat(4, min-content);
+        grid-template-rows: 73vh 65vw 50vw repeat(4, min-content);
     }
 
     @media only screen and (max-width: $bp-small) {

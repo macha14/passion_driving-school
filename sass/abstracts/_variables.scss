@@ -38,10 +38,10 @@ $box-shadow-4: 0 2rem 5rem rgba(0, 0, 0, 0.5);
 $box-shadow-5: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 
 // RESPONSIVE BREAKPOINTS
-$bp-largest: 75em;   // 1200px
-$bp-large: 62.5em;   // 1000px
-$bp-medium: 50em;    // 800px;
-$bp-small: 37.5em;    // 600px;
+$bp-largest: 75em;   // 1200px big-desktop
+$bp-large: 62.5em;   // 1000px tab-land
+$bp-medium: 50em;    // 800px; tab-port
+$bp-small: 37.5em;    // 600px; phone
 
 // BORDER RADIUS
 $border-radius-1: 3px;
